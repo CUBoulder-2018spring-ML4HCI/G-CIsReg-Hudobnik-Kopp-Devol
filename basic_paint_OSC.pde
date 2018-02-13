@@ -3,10 +3,13 @@ import netP5.*;
 OscP5 oscP5;
 NetAddress dest;
 
-float p1 = 0.5;
-float p2 = 0.5;
-float p3 = 0.5;
-float p4 = 0.5;
+float p1 ;
+float p2 ;
+float p3 ;
+float p4 ;
+
+float p1Old = 250;
+float p2Old = 250;
 
 color paintColor = color(0, 0, 0);
 int paintWidth = 1;
@@ -117,8 +120,10 @@ void oscEvent(OscMessage theOscMessage) {
         
         strokeWeight(p3);
         stroke(paintColor);
-        //line(pmouseX, pmouseY, mouseX, mouseY);
-        point(p1,500-p2);
+        line(p1Old, 500-p2Old, p1, 500-p2);
+        //point(p1,500-p2);
+        p1Old = p1;
+        p2Old = p2;
       
       } else {
         println("Error: unexpected params type tag received by Processing");
