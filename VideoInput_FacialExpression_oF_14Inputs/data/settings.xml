@@ -50,5 +50,5 @@
 <!-- osc output settings -->
 <osc>
 	<host>localhost</host>
-	<port>6448</port>
+	<port>140000</port>
 </osc>
