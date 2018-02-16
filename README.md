@@ -8,6 +8,10 @@
 ### Tools/Libraries
 * Xbox 360 Kinect: Used as the input to track both right hand location as well as left and right knee location
 * Basic Paint Sketch: Used as the output to create an environment in which colored lines could be drawn using data sent from wekinator. This made use of processing's basic line drawing function, line color function, line size function and used OSC inputs of x, y and z coordinates as well as a simple class input for color selection.
+* SimpleOpenNI for interaction with the kinect
+* Processing 2.0
+* Wekinator
+* Wekinator Input Helper
 
 ### ML Algorithms Used/Tested
 * The below metrics show the model performance using different ML algorithms. The first 5 sets of metrics show performance on the regression part of the project and the last set of metrics shows performance of the classification part of the project. As can most likely be deduced from the data, we have used linear regression in our final model of the regression data and KNN(1) for the classification data. We chose to use linear regression over polynomial regression as it makes more sense in the context of directly mapping hand position in front of the body to brush location on the square canvas. By training on the corners of this canvas, we allow the algorithm to apply a linear regression to all points in between, giving good direct mapping. For the classification data, any of the algorithms would probably work (except the boosted stump) but we picked KNN with 3 neighbors as it gave an excellent fit and helped sort out random noise.
