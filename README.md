@@ -55,4 +55,4 @@
 * A better understanding of how to use and interact with OSC (via processing), using Wekinator input helper to feature extract from the kinect, and how to train different inputs and outputs using both regression and classification
 
 ### Demo Video
-* [Video][1] <[https://vimeo.com/255834395/][1]>
+* [Video](https://vimeo.com/255834395/)
