@@ -17,7 +17,7 @@
   - Y-loc: 0.86 RMS
   - Size: 0.41 RMS
 
-* Neural Network - 1 Layer
+* Neural Network - 2 Layers
   - X-loc: 4.69 RMS
   - Y-loc: 3.37 RMS
   - Size: 0.36 RMS
