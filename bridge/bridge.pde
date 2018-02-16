@@ -38,11 +38,45 @@ float p26 = 0.5;
 float p27 = 0.5;
 float p28 = 0.5;
 float p29 = 0.5;
-
+float p30 = 0.5;
+float p31 = 0.5;
+float p32 = 0.5;
+float p33 = 0.5;
+float p34 = 0.5;
+float p35 = 0.5;
+float p36 = 0.5;
+float p37 = 0.5;
+float p38 = 0.5;
+float p39 = 0.5;
+float p40 = 0.5;
+float p41 = 0.5;
+float p42 = 0.5;
+float p43 = 0.5;
+float p44 = 0.5;
+float p45 = 0.5;
+float p46 = 0.5;
+float p47 = 0.5;
+float p48 = 0.5;
+float p49 = 0.5;
+float p50 = 0.5;
+float p51 = 0.5;
+float p52 = 0.5;
+float p53 = 0.5;
+float p54 = 0.5;
+float p55 = 0.5;
+float p56 = 0.5;
+float p57 = 0.5;
+float p58 = 0.5;
+float p59 = 0.5;
+float p60 = 0.5;
+float p61 = 0.5;
+float p62 = 0.5;
+float p63 = 0.5;
+float p64 = 0.5;
 void setup() {
   /* start oscP5, listening for incoming messages at port 12000 */
   oscP5 = new OscP5(this,14000);
-  dest = new NetAddress("127.0.0.1",6448);
+  dest = new NetAddress("10.202.64.125",6448);
 }
  /* recieves inputs from two programs*/
 void oscEvent(OscMessage theOscMessage) {
@@ -78,6 +112,42 @@ void oscEvent(OscMessage theOscMessage) {
         p27 = theOscMessage.get(26).floatValue(); //get 2nd parameter
         p28 = theOscMessage.get(27).floatValue(); //get 2nd parameter
         p29 = theOscMessage.get(28).floatValue(); //get 2nd parameter
+        p30 = theOscMessage.get(29).floatValue(); //get this parameter
+        p31 = theOscMessage.get(30).floatValue(); //get 2nd parameter
+        p32 = theOscMessage.get(31).floatValue(); //get 2nd parameter
+        p33 = theOscMessage.get(32).floatValue(); //get 2nd parameter
+        p34 = theOscMessage.get(33).floatValue(); //get 2nd parameter
+        p35 = theOscMessage.get(34).floatValue(); //get 2nd parameter
+        p36 = theOscMessage.get(35).floatValue(); //get 2nd parameter
+        p37 = theOscMessage.get(36).floatValue(); //get 2nd parameter
+        p38 = theOscMessage.get(37).floatValue(); //get 2nd parameter
+        p39 = theOscMessage.get(38).floatValue(); //get 2nd parameter
+        p40 = theOscMessage.get(39).floatValue(); //get 2nd parameter
+        p41 = theOscMessage.get(40).floatValue(); //get 2nd parameter
+        p42 = theOscMessage.get(41).floatValue(); //get 2nd parameter
+        p43 = theOscMessage.get(42).floatValue(); //get 2nd parameter
+        p44 = theOscMessage.get(43).floatValue(); //get 2nd parameter
+        p45 = theOscMessage.get(44).floatValue(); //get this parameter
+        p46 = theOscMessage.get(45).floatValue(); //get 2nd parameter
+        p47 = theOscMessage.get(46).floatValue(); //get 2nd parameter
+        p48 = theOscMessage.get(47).floatValue(); //get 2nd parameter
+        p49 = theOscMessage.get(48).floatValue(); //get 2nd parameter
+        p50 = theOscMessage.get(49).floatValue(); //get 2nd parameter
+        p51 = theOscMessage.get(50).floatValue(); //get 2nd parameter
+        p52 = theOscMessage.get(51).floatValue(); //get 2nd parameter
+        p53 = theOscMessage.get(52).floatValue(); //get 2nd parameter
+        p54 = theOscMessage.get(53).floatValue(); //get 2nd parameter
+        p55 = theOscMessage.get(54).floatValue(); //get 2nd parameter
+        p56 = theOscMessage.get(55).floatValue(); //get 2nd parameter
+        p57 = theOscMessage.get(56).floatValue(); //get 2nd parameter
+        p58 = theOscMessage.get(57).floatValue(); //get 2nd parameter
+        p59 = theOscMessage.get(58).floatValue(); //get this parameter
+        p60 = theOscMessage.get(59).floatValue(); //get 2nd parameter
+        p61 = theOscMessage.get(60).floatValue(); //get 2nd parameter
+        p62 = theOscMessage.get(61).floatValue(); //get 2nd parameter
+        p63 = theOscMessage.get(62).floatValue(); //get 2nd parameter
+        p64 = theOscMessage.get(63).floatValue(); //get 2nd parameter
+
         
         
         println("Received new params value from Wekinator");  
@@ -122,6 +192,41 @@ void sendOsc() {
   msg.add(p27);
   msg.add(p28);
   msg.add(p29);
+  msg.add(p30); 
+  msg.add(p31);
+  msg.add(p32);
+  msg.add(p33);
+  msg.add(p34); 
+  msg.add(p35);
+  msg.add(p36);
+  msg.add(p37);
+  msg.add(p38); 
+  msg.add(p39);
+  msg.add(p40);
+  msg.add(p41);
+  msg.add(p42); 
+  msg.add(p43);
+  msg.add(p44);
+  msg.add(p45);
+  msg.add(p46); 
+  msg.add(p47);
+  msg.add(p48);
+  msg.add(p49);
+  msg.add(p50); 
+  msg.add(p51);
+  msg.add(p52);
+  msg.add(p53);
+  msg.add(p54); 
+  msg.add(p55);
+  msg.add(p56);
+  msg.add(p57);
+  msg.add(p58);
+  msg.add(p59);
+  msg.add(p60);
+  msg.add(p61);
+  msg.add(p62);
+  msg.add(p63);
+  msg.add(p64);
   oscP5.send(msg, dest);
 
 }
