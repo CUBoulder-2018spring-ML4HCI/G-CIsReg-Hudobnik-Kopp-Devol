@@ -50,13 +50,13 @@
   - Naive Bayes: 100% Fit
 
 ### What was accomplished
-* Our goal of a simple kinect to paint gesture system. It is working as intended, although more training will be needed to fine-tune the abilities. We also may change how to activate each paint color to be more accessible as well.
+* Our goal of a simple kinect to paint gesture system. It is working as intended, although more training will be needed to fine-tune the abilities. We were able to control brush location in the paininting program using smoothed x and y coordinates of the users right hand, sent in from the Kinect. The z coordinate of the right hand was mapped to brush size, allowing the user to change the weight of the line being drawn by moving their hand closer or farther away from the kinect. Currently the program also classifies the x,y coordinates of the left and right knee (feet didnt fit into the frame while standing at a resonable distance) into five classes, which control the color of the line being drawn. We may still change this classification system to be more accessible.
 
 ### Challenges
 * The biggest challenge that we encountered was getting a program to work with the Kinect and OSC. We opted to find a processing way to do it, which required a library called SimpleOpenNI and processing 2.0. It was also a little rough getting the paint program to interact with wekinator, but now we have a better understanding of OSC and how it interacts with processing and wekinator.
 
 ### Lessons Learned
-* A better understanding of how to use and interact with OSC (via processing), using Wekinator input helper to feature extract from the kinect, and how to train different inputs and outputs using both regression and classification
+* A better understanding of how to use and interact with OSC (via processing), using Wekinator input helper to feature extract from the kinect, and how to train specific inputs and outputs using both regression and classification
 
 ### Demo Video
 * [Video](https://vimeo.com/255834395/)
